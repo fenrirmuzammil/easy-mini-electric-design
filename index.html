@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eef7ff" />
+  <title>EASY — MINI Electric</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <button class="menu" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="logo">
+        <i></i><strong>EASY</strong><i></i>
+      </div>
+      <nav class="nav">
+        <a href="#build">Build</a>
+        <a href="#build">Build</a>
+        <button id="cartBtn">Cart <b id="cartCount">0</b></button>
+        <button class="avatar-btn"><img src="https://i.pravatar.cc/70?img=12" alt="Profile"></button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="copy" id="build">
+        <span class="badge">⚡ Electric Car</span>
+        <h1>MINI <strong>ELECTRIC</strong></h1>
+        <p>Speed up your future. Fast, smart, and sustainable — experience the next generation of electric mobility with MINI Electric.</p>
+        <div class="price">From <strong>£29,000</strong></div>
+        <div class="actions">
+          <button class="primary" id="buyBtn"><span>🛒</span> Build Your MINI <b>→</b></button>
+          <button class="circle-btn" id="viewBtn" aria-label="View car">◉</button>
+        </div>
+      </section>
+
+      <section class="car-stage">
+        <div class="halo"></div>
+        <div class="car-shadow"></div>
+        <div class="car-photo-wrap">
+          <img class="car-photo" src="assets/car.png" alt="Electric city car">
+        </div>
+      </section>
+
+      <aside class="stats">
+        <div class="stat-grid">
+          <article class="stat"><span>◉</span><small>0–100 km/h</small><strong>6.8 sec</strong><em>Speed</em></article>
+          <article class="stat"><span>▣</span><small>Range</small><strong>462 km</strong><em>Battery</em></article>
+          <article class="stat"><span>♧</span><small>Efficiency</small><strong>14.5</strong><em>kWh/100km</em></article>
+          <article class="stat"><span>⌂</span><small>Charging</small><strong>1.5h</strong><em>10–80%</em></article>
+        </div>
+        <button class="video-card" id="videoBtn">
+          <div class="mini-car"></div>
+          <span class="play">▶</span>
+          <small>MINI ELECTRIC</small>
+        </button>
+      </aside>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <h2>Build Your MINI</h2>
+      <p>Choose your preferred MINI Electric configuration.</p>
+      <label>Colour
+        <select><option>Ice White</option><option>Sky Blue</option><option>Slate Grey</option></select>
+      </label>
+      <label>Wheels
+        <select><option>16" Aero</option><option>17" Sport</option><option>18" Premium</option></select>
+      </label>
+      <button class="primary wide" id="confirmBtn">Add Configuration</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
